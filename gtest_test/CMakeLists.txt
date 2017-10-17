@@ -16,6 +16,7 @@ catkin_package()
 #############
 
 ## Add gtest based cpp test target and link libraries
+message("GTEST_INCLUDE_DIRS: ${GTEST_INCLUDE_DIRS}")
 message("GTEST_LIBRARIES: ${GTEST_LIBRARIES}")
 catkin_add_gtest(${PROJECT_NAME}-test test/gtest_test.cpp)
 target_link_libraries(${PROJECT_NAME}-test ${catkin_LIBRARIES})
