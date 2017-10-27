@@ -20,7 +20,7 @@ message("GTEST_LIBRARIES: ${GTEST_LIBRARIES}")
 message("GMOCK_LIBRARIES: ${GMOCK_LIBRARIES}")
 message("GTEST_INCLUDE_DIRS: ${GTEST_INCLUDE_DIRS}")
 message("GMOCK_INCLUDE_DIRS: ${GMOCK_INCLUDE_DIRS}")
-catkin_add_gtest(${PROJECT_NAME}-test test/gmock_test.cpp)
+catkin_add_gmock(${PROJECT_NAME}-test test/gmock_test.cpp)
 target_link_libraries(${PROJECT_NAME}-test ${catkin_LIBRARIES})
 
 ## Add folders to be run by python nosetests
